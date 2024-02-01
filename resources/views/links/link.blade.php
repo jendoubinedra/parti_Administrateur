@@ -54,7 +54,7 @@
                                                     <td>{{$link->href}}</td>
                                                     <td>{{$link->page->name}}</td>
                                                     <td>
-                                                    <a href="link/edit/{{$link->id}}">edit</a>
+                                                    <a href="link/edit/{{$link->id}}"><button type="submit" class="btn btn-primary">edit</button></a>
                                                         <form action="link/delete/{{$link->id}}" method="post">
                                                             @csrf
                                                             @method('DELETE')

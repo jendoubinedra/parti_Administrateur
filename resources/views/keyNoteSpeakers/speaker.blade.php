@@ -58,7 +58,7 @@
                                                 <td>{{$key->description}}</td>
                                                 <td>{{$key->website}}</td>
                                                 <td>
-                                                <a href="keynote/edit/{{$key->id}}">edit</a>
+                                                <a href="keynote/edit/{{$key->id}}"><button type="submit" class="btn btn-primary">edit</button></a>
                                                     <form action="keynote/delete/{{$key->id}}" method="post">
                                                         @csrf
                                                         @method('DELETE')

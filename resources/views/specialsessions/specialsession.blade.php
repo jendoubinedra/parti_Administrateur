@@ -56,7 +56,7 @@
                                                 <td>{{$specialsession->description}}</td>
                                                 <td>{{$specialsession->order}}</td>
                                                 <td>
-                                                <a href="specialsession/edit/{{$specialsession->id}}">edit</a>
+                                                <a href="specialsession/edit/{{$specialsession->id}}"><button type="submit" class="btn btn-primary">edit</button></a>
                                                     <form action="specialsession/delete/{{$specialsession->id}}" method="post">
                                                         @csrf
                                                         @method('DELETE')

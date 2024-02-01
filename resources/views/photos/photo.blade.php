@@ -60,7 +60,7 @@
                                                 <td>{{$photo->order}}</td>
                                                 <td><img src="{{asset($photo->vpath)}}" alt="" width="50%"></td>
                                                 <td>
-                                                <a href="photo/edit/{{$photo->id}}">edit</a>
+                                                <a href="photo/edit/{{$photo->id}}"><button type="submit" class="btn btn-primary">edit</button></a>
                                                     <form action="photo/delete/{{$photo->id}}" method="post">
                                                         @csrf
                                                         @method('DELETE')

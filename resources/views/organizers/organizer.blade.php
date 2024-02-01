@@ -58,7 +58,7 @@
                                                 <td>{{$organizer->order}}</td>
                                                 <td><img src="{{asset($organizer->src)}}" alt="" width="50%"></td>
                                                 <td>
-                                                    <a href="organizer/edit/{{$organizer->id}}">edit</a>
+                                                    <a href="organizer/edit/{{$organizer->id}}"><button type="submit" class="btn btn-primary">edit</button></a>
                                                     <form action="organizer/delete/{{$organizer->id}}" method="post">
                                                         @csrf
                                                         @method('DELETE')

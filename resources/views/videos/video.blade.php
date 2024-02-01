@@ -58,7 +58,7 @@
                                                 <td>{{$video->order}}</td>
                                                 <td><video src="{{asset($video->vpath)}}" width="640" height="360" controls></video></td>
                                                 <td>
-                                                <a href="video/edit/{{$video->id}}">edit</a>
+                                                <a href="video/edit/{{$video->id}}"><button type="submit" class="btn btn-primary">edit</button></a>
                                                     <form action="video/delete/{{$video->id}}" method="post">
                                                         @csrf
                                                         @method('DELETE')

@@ -52,7 +52,7 @@
                                                 <td>{{$page->id}}</td>
                                                 <td>{{$page->name}}</td>
                                                 <td>
-                                                <a href="page/edit/{{$page->id}}">edit</a>
+                                                <a href="page/edit/{{$page->id}}"><button type="submit" class="btn btn-primary">edit</button></a>
                                                     <form action="page/delete/{{$page->id}}" method="post">
                                                         @csrf
                                                         @method('DELETE')

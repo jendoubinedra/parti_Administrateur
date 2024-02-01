@@ -63,7 +63,7 @@
                                                 <td>{{$author->countrie->name}}</td>
 
                                                 <td>
-                                                    <a href="author/edit/{{$author->id}}">edit</a>
+                                                    <a href="author/edit/{{$author->id}}"> <button type="submit" class="btn btn-primary">edit</button></a>
                                                     <form action="author/delete/{{$author->id}}" method="post">
                                                         @csrf
                                                         @method('DELETE')

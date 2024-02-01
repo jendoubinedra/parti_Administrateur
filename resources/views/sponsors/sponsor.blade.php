@@ -58,7 +58,7 @@
                                                 <td>{{$sponsor->order}}</td>
                                                 <td><img src="{{asset($sponsor->src)}}" alt="" width="50%"></td>
                                                 <td>
-                                                <a href="sponsor/edit/{{$sponsor->id}}">edit</a>
+                                                <a href="sponsor/edit/{{$sponsor->id}}"><button type="submit" class="btn btn-primary">edit</button></a>
                                                     <form action="sponsor/delete/{{$sponsor->id}}" method="post">
                                                         @csrf
                                                         @method('DELETE')

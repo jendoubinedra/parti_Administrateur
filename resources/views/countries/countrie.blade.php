@@ -52,7 +52,7 @@
                                                 <td>{{$countrie->id}}</td>
                                                 <td>{{$countrie->name}}</td>
                                                 <td>
-                                                    <a href="countrie/edit/{{$countrie->id}}">edit</a>
+                                                    <a href="countrie/edit/{{$countrie->id}}"><button type="submit" class="btn btn-primary">edit</button></a>
                                                     <form action="countrie/delete/{{$countrie->id}}" method="post">
                                                         @csrf
                                                         @method('DELETE')

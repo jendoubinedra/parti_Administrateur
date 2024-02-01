@@ -54,7 +54,7 @@
                                                 <td>{{$tweet->link}}</td>
                                                 <td>{{$tweet->datetweet}}</td>
                                                 <td>
-                                                    <a href="tweet/edit/{{$tweet->id}}">edit</a>
+                                                    <a href="tweet/edit/{{$tweet->id}}"><button type="submit" class="btn btn-primary">edit</button></a>
                                                     <form action="tweet/delete/{{$tweet->id}}" method="post">
                                                         @csrf
                                                         @method('DELETE')
